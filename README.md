@@ -2,24 +2,20 @@
 1: Clone it using this code
 git clone https://github.com/JM-221/webimg.git
 
-2: go one level up in directory and make a virtualenvironment by this code
-virtualenv venv
 
-3: activate it by
-source venv/bin/activate
 
-4: go back to the webimg folder by
+2: go back to the webimg folder by
 cd webimg
 
-5: install requirements
+3: install requirements
 pip install -r requirements.txt
 
-6: run the main.py
+4: run the main.py
 python main.py
 
-7: hold the ctrl and click on the provided link in the terminal 
+5: hold the ctrl and click on the provided link in the terminal 
 
-8: to exit the application press
+6: to exit the application press
 ctrl+c
 
 
