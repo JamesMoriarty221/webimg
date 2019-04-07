@@ -8,7 +8,8 @@ app = Flask(__name__)
 @app.route("/",methods=['GET', 'POST'])
 def index():
 	crawl.run("cat")
-	return "What do you like?"
+	return render_template('index.html')
+	#return "What do you like?"
 
 @app.route("/img",methods=['GET', 'POST'])
 def img():
