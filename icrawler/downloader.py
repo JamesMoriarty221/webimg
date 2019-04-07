@@ -109,6 +109,7 @@ class Downloader(ThreadPool):
             **kwargs: reserved arguments for overriding.
         """
         file_url = task['file_url']
+        #print("Fucking URL=",file_url)# good one
         task['success'] = False
         task['filename'] = None
         retry = max_retry
@@ -143,7 +144,7 @@ class Downloader(ThreadPool):
                     self.fetched_num += 1
                     filename = self.get_filename(task, default_ext)
                 self.logger.info('image #%s\t%s', self.fetched_num, file_url)
-                self.storage.write(filename, response.content)
+                #self.storage.write(filename, response.content)
                 task['success'] = True
                 task['filename'] = filename
                 break
@@ -213,6 +214,10 @@ class Downloader(ThreadPool):
                 self.download(task, default_ext, req_timeout, **kwargs)
                 self.process_meta(task)
                 self.in_queue.task_done()
+                print("All the fucking -----", task['file_url'])
+                with open('saving_the_urls.txt', 'a+') as f:  
+                    f.write(task['file_url']+"\n")
+
         self.logger.info('thread {} exit'.format(current_thread().name))
 
     def __exit__(self, exc_type, exc_val, exc_tb):

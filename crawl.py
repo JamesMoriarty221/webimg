@@ -21,7 +21,7 @@ def test_google(keyword):
         color='orange',
         license='commercial,modify',
         date=(None, (2017, 11, 30)))
-    google_crawler.crawl(keyword, filters=search_filters, max_num=100)
+    google_crawler.crawl(keyword, filters=search_filters, max_num=10)
 
 
 def test_bing():
