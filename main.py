@@ -1,10 +1,14 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
+from google_images_download import google_images_download   #importing the library
+
 from random import randint
 #from icrawler import crawl
 import crawl
 import random
 app = Flask(__name__)
- 
+response = google_images_download.googleimagesdownload()   #class instantiation
+
+img_list=[]
 @app.route("/",methods=['GET', 'POST'])
 def index():
 	crawl.run("cat")
