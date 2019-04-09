@@ -17,14 +17,14 @@ def index():
 			text="cat"
 		arguments["keywords"]=text
 	paths, img_list = response.download(arguments)  # passing the arguments to the function
-	dict["im_list"] = img_list
+	
 	return render_template('index.html')
 
 @app.route("/img",methods=['GET', 'POST'])
 def img():
 	#res=render_template('test.html')
-	#paths, img_list = response.download(arguments)  # passing the arguments to the function
-	img_list = dict["img_list"]
+	paths, img_list = response.download(arguments)  # passing the arguments to the function
+	
 	return update_content(img_list)
 
 def img_get(img_list):
