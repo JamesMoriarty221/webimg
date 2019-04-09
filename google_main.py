@@ -17,6 +17,9 @@ def index():
 			text="cat"
 		arguments["keywords"]=text
 	paths, img_list = response.download(arguments)  # passing the arguments to the function
+	rand_img = random.choice(img_list)
+	arguments["similar_images"] = rand_img
+	arguments["keywords"] = ""
 	
 	return render_template('index.html')
 
@@ -24,6 +27,7 @@ def index():
 def img():
 	#res=render_template('test.html')
 	paths, img_list = response.download(arguments)  # passing the arguments to the function
+	arguments["similar_images"] = random.choice(img_list)
 	
 	return update_content(img_list)
 
