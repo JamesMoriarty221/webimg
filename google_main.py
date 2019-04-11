@@ -1,12 +1,15 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
-from google_images_download import google_images_download   #importing the library
+import g_images_download   #importing the library
+import g_images_download   #importing the library
+#from google_images_download import google_images_download   #importing the library
 
 from random import randint
 #from icrawler import crawl
 import crawl
 import random
 app = Flask(__name__)
-response = google_images_download.googleimagesdownload()   #class instantiation
+response = g_images_download.googleimagesdownload()   #class instantiation
+#response = google_images_download.googleimagesdownload()   #class instantiation
 arguments = {"keywords":"cat","no_download":"no_download", "limit":10}   #creating list of arguments
 
 @app.route("/",methods=['GET', 'POST'])
@@ -16,18 +19,20 @@ def index():
 		if text=="":
 			text="cat"
 		arguments["keywords"]=text
-	paths, img_list = response.download(arguments)  # passing the arguments to the function
-	rand_img = random.choice(img_list)
-	arguments["similar_images"] = rand_img
-	arguments["keywords"] = ""
+	print(arguments)
+	path,img_list = response.download(arguments)  # passing the arguments to the function
+	print(img_list)
+	rand_img = img_list[1]#random.choice(img_list)
+	#arguments["similar_images"] = rand_img
+	#arguments["keywords"] = ""
 	
 	return render_template('index.html')
 
 @app.route("/img",methods=['GET', 'POST'])
 def img():
-	#res=render_template('test.html')
+	print(arguments["similar_images"])
 	paths, img_list = response.download(arguments)  # passing the arguments to the function
-	arguments["similar_images"] = random.choice(img_list)
+	arguments["similar_images"] = img_list[1]#random.choice(img_list)
 	
 	return update_content(img_list)
 
