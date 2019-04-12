@@ -25,16 +25,15 @@ def index():
 
 @app.route("/img",methods=['GET', 'POST'])
 def img():
-	print(arguments["similar_images"])
 	paths, img_list = response.download(arguments)  # passing the arguments to the function
-	first_img = img_list[1]
+	'''first_img = img_list[1]
 
 	try:
 		if(first_img[-4] == "."):
 			arguments["similar_images"] = img_list[1]#random.choice(img_list)
 	except ValueError as ve:
 		arguments["similar_images"] =""
-		print(ve)
+		print(ve)'''
 	return update_content(img_list)
 
 def img_get(img_list):
