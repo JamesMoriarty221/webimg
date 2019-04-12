@@ -32,7 +32,9 @@ def index():
 def img():
 	print(arguments["similar_images"])
 	paths, img_list = response.download(arguments)  # passing the arguments to the function
-	arguments["similar_images"] = img_list[1]#random.choice(img_list)
+	first_img =  img_list[1]
+	if(first_img[-4]=="."):
+		arguments["similar_images"] = img_list[1]#random.choice(img_list)
 	
 	return update_content(img_list)
 

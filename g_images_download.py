@@ -121,7 +121,6 @@ def user_input():
 
 class googleimagesdownload:
     def __init__(self):
-        self.img_list = []
         pass
 
     # Downloading entire Web Document (Raw Page Content)
@@ -500,8 +499,6 @@ class googleimagesdownload:
     def download_image_thumbnail(self,image_url,main_directory,dir_name,return_image_name,print_urls,socket_timeout,print_size,no_download):
         if print_urls or no_download:
             print("Image URL: " + image_url)
-            #self.im_list.append(image_url)
-	    
         if no_download:
             return "success","Printed url without downloading"
         try:
@@ -564,7 +561,6 @@ class googleimagesdownload:
     def download_image(self,image_url,image_format,main_directory,dir_name,count,print_urls,socket_timeout,prefix,print_size,no_numbering,no_download):
         if print_urls or no_download:
             print("Image URL: " + image_url)
-            self.img_list.append(image_url)
         if no_download:
             return "success","Printed url without downloading",None,None
         try:
@@ -583,6 +579,7 @@ class googleimagesdownload:
 
                 # keep everything after the last '/'
                 image_name = str(image_url[(image_url.rfind('/')) + 1:])
+                image_name = image_name.lower()
                 # if no extension then add it
                 # remove everything after the image name
                 if image_format == "":
@@ -670,6 +667,7 @@ class googleimagesdownload:
 
     # Finding 'Next Image' from the given raw page
     def _get_next_item(self,s):
+        print(s)
         start_line = s.find('rg_meta notranslate')
         if start_line == -1:  # If no links are found then give an error!
             end_quote = 0
@@ -704,6 +702,7 @@ class googleimagesdownload:
         errorCount = 0
         i = 0
         count = 1
+        img_list = [] # to save the list of all images
         while count < limit+1:
             object, end_content = self._get_next_item(page)
             if object == "no_links":
@@ -721,6 +720,7 @@ class googleimagesdownload:
 
                 #download the images
                 download_status,download_message,return_image_name,absolute_path = self.download_image(object['image_link'],object['image_format'],main_directory,dir_name,count,arguments['print_urls'],arguments['socket_timeout'],arguments['prefix'],arguments['print_size'],arguments['no_numbering'],arguments['no_download'])
+                img_list.append(object['image_link'])
                 print(download_message)
                 if download_status == "success":
 
@@ -734,7 +734,7 @@ class googleimagesdownload:
                     items.append(object)  # Append all the links in the list named 'Links'
                     abs_path.append(absolute_path)
                 else:
-                    errorCount += safe_search_string1
+                    errorCount += 1
 
                 #delay param
                 if arguments['delay']:
@@ -746,7 +746,7 @@ class googleimagesdownload:
             print("\n\nUnfortunately all " + str(
                 limit) + " could not be downloaded because some images were not downloadable. " + str(
                 count-1) + " is all we got for this search filter!")
-        return items,errorCount,abs_path
+        return items,errorCount,abs_path,img_list
 
 
     # Bulk Download
@@ -836,7 +836,6 @@ class googleimagesdownload:
                     print(iteration)
                     print("Evaluating...")
                     search_term = pky + search_keyword[i] + sky
-
                     if arguments['image_directory']:
                         dir_name = arguments['image_directory']
                     elif arguments['no_directory']:
@@ -849,6 +848,7 @@ class googleimagesdownload:
                     params = self.build_url_parameters(arguments)     #building URL with params
 
                     url = self.build_search_url(search_term,params,arguments['url'],arguments['similar_images'],arguments['specific_site'],arguments['safe_search'])      #building main search url
+                    print(url)
 
                     if limit < 101:
                         raw_html = self.download_page(url)  # download page
@@ -857,11 +857,9 @@ class googleimagesdownload:
 
                     if arguments['no_download']:
                         print("Starting to Print Image URLS")
-                        print ("----",url)
-
                     else:
                         print("Starting Download...")
-                    items,errorCount,abs_path = self._get_all_items(raw_html,main_directory,dir_name,limit,arguments)    #get all image items and download images
+                    items,errorCount,abs_path,img_list = self._get_all_items(raw_html,main_directory,dir_name,limit,arguments)    #get all image items and download images
                     paths[pky + search_keyword[i] + sky] = abs_path
 
                     #dumps into a json file
@@ -893,7 +891,7 @@ class googleimagesdownload:
                     print("\nErrors: " + str(errorCount) + "\n")
         if arguments['print_paths']:
             print(paths)
-        return paths,self.img_list
+        return paths,img_list
 
 #------------- Main Program -------------#
 def main():
@@ -917,3 +915,4 @@ if __name__ == "__main__":
     main()
 
 # In[ ]:
+
