@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c851ea3-7f78-4cd7-b0f4-9fb8a0d3bfa4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/g_images_download.py" beforeDir="false" afterPath="$PROJECT_DIR$/g_images_download.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/google_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/google_main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/google_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="242">
+              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
               <folding>
                 <element signature="e#0#82#0" expanded="true" />
               </folding>
@@ -104,8 +103,8 @@
       <find>get_all_items(</find>
       <find>download_image(</find>
       <find>self.</find>
-      <find>choice</find>
       <find>img_</find>
+      <find>choice</find>
     </findStrings>
     <replaceStrings>
       <replace>goog_dl</replace>
@@ -139,7 +138,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -293,8 +292,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/google_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="242">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
           <folding>
             <element signature="e#0#82#0" expanded="true" />
           </folding>
