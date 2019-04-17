@@ -1,16 +1,28 @@
+import os
 from flask import Flask, flash, redirect, render_template, request, session, abort
 import g_images_download   #importing the library
 import g_images_download   #importing the library
-#from google_images_download import google_images_download   #importing the library
-
+from flask_sqlalchemy import SQLAlchemy
 from random import randint
-#from icrawler import crawl
-import crawl
 import random
+
+project_dir = os.path.dirname(os.path.abspath(__file__))
+database_file = "sqlite:///{}".format(os.path.join(project_dir, "bookdatabase.db"))
+
+
 app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"] = database_file
+db = SQLAlchemy(app)
+
 response = g_images_download.googleimagesdownload()   #class instantiation
 #response = google_images_download.googleimagesdownload()   #class instantiation
 arguments = {"keywords":"cat","no_download":"no_download", "limit":10}   #creating list of arguments
+
+class Book(db.Model):
+    title = db.Column(db.String(80), unique=True, nullable=False, primary_key=True)
+
+    def __repr__(self):
+        return "<Title: {}>".format(self.title)
 
 @app.route("/",methods=['GET', 'POST'])
 def index():
@@ -19,7 +31,14 @@ def index():
 		if text=="":
 			text="cat"
 		arguments["keywords"]=text
-	print(arguments)
+
+		# adding the text to the DB
+		db.session.add(text)
+		db.session.commit()
+
+	books = Book.query.all()
+	print(books)
+
 
 	return render_template('index.html')
 

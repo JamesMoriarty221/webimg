@@ -19,6 +19,13 @@ body {
 }
 </style>
 
-</div>
+    <body>
+<h3>History : </h3>
+    {% for book in books %}
+      <p>{{book.title}}</p>
+    {% endfor %}
 
+
+</body>
+</div>
 {% endblock %}
