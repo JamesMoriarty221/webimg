@@ -2,34 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c851ea3-7f78-4cd7-b0f4-9fb8a0d3bfa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sql_main_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/google_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/builtin/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/builtin/baidu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/builtin/bing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/builtin/filter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/builtin/flickr.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/builtin/google.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/builtin/greedy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/builtin/urllist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/crawler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/downloader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/feeder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/parser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/storage/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/storage/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/storage/filesystem.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/storage/google_storage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/utils/cached_queue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/utils/proxy_pool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/utils/session.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/utils/signal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/utils/thread_pool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icrawler/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookdatabase.db" beforeDir="false" afterPath="$PROJECT_DIR$/bookdatabase.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google_main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_main_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_main_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/bin/python" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/bin/python3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/lib64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/pyvenv.cfg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,23 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/google_main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sql_main_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+            <state relative-caret-position="332">
+              <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -63,20 +32,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/lib/python3.6/tokenize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="290">
+              <caret line="451" selection-start-line="451" selection-end-line="451" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask/app.py">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50138">
-              <caret line="2308" selection-start-line="2308" selection-end-line="2308" />
+            <state relative-caret-position="214">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="1741" selection-start-line="1741" selection-end-line="1741" />
             </state>
           </provider>
         </entry>
@@ -161,6 +139,7 @@
       <find>choice</find>
       <find>title</find>
       <find>Histo</find>
+      <find>url</find>
     </findStrings>
     <replaceStrings>
       <replace>goog_dl</replace>
@@ -174,15 +153,15 @@
       <list>
         <option value="$PROJECT_DIR$/venv/lib/python3.6/site-packages/google_images_download/__init__.py" />
         <option value="$PROJECT_DIR$/g_images_download.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/google_main.py" />
         <option value="$PROJECT_DIR$/sql_main_app.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1985" />
-    <option name="y" value="-4" />
+    <option name="x" value="-525" />
+    <option name="y" value="172" />
     <option name="width" value="1855" />
     <option name="height" value="979" />
   </component>
@@ -213,7 +192,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sql_main_app.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -241,7 +220,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/google_main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sql_main_app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -270,16 +249,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1985" y="-4" width="1855" height="979" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="959" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25483692" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26036483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39840183" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.40771028" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -307,11 +286,6 @@
           <line>830</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sql_main_app.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -322,6 +296,14 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/google_images_download.py" />
+    <entry file="file://$PROJECT_DIR$/google_main.py" />
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50138">
@@ -371,30 +353,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/google_main.py">
+    <entry file="file:///usr/lib/python3.6/tokenize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="290">
+          <caret line="451" selection-start-line="451" selection-end-line="451" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="1741" selection-start-line="1741" selection-end-line="1741" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sql_main_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        <state relative-caret-position="332">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
         </state>
       </provider>
     </entry>

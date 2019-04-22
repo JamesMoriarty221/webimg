@@ -21,6 +21,7 @@ arguments = {"keywords": "cat", "no_download": "no_download", "limit": 10}  # cr
 
 class Book(db.Model):
     title = db.Column(db.String(80), unique=True, nullable=False, primary_key=True)
+    #url = db.Column(db.String(300), unique=True, nullable=True, primary_key=False)
 
     def __repr__(self):
         return "<Title: {}>".format(self.title)
@@ -34,6 +35,7 @@ def index():
             text = "cat"
         arguments["keywords"] = text
         book = Book(title = text)
+
         # adding the text to the DB
         db.session.add(book)
         db.session.commit()
@@ -47,14 +49,6 @@ def index():
 @app.route("/img", methods=['GET', 'POST'])
 def img():
     paths, img_list = response.download(arguments)  # passing the arguments to the function
-    '''first_img = img_list[1]
-
-    try:
-        if(first_img[-4] == "."):
-            arguments["similar_images"] = img_list[1]#random.choice(img_list)
-    except ValueError as ve:
-        arguments["similar_images"] =""
-        print(ve)'''
     return update_content(img_list)
 
 
@@ -73,6 +67,6 @@ def update_content(img_list):
 
 
 if __name__ == "__main__":
-    app.run()  # host='0.0.0.0', port=80)
+    app.run(host='127.0.0.1', port=8001)
 
 
