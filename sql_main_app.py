@@ -1,5 +1,6 @@
 import os
 from flask import Flask, flash, redirect, render_template, request, session, abort
+from gevent.pywsgi import WSGIServer
 import g_images_download  # importing the library
 import g_images_download  # importing the library
 from random import randint
@@ -29,6 +30,7 @@ class Book(db.Model):
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
+    books = Book.query.all()
     if request.method == "POST":
         text = request.form['text']
         if text == "":
@@ -36,12 +38,14 @@ def index():
         arguments["keywords"] = text
         book = Book(title = text)
 
-        # adding the text to the DB
-        db.session.add(book)
-        db.session.commit()
+	books = Book.query.all()
+	if (text not in books):
+		# adding the text to the DB
+		db.session.add(book)
+		db.session.commit()
 
-    books = Book.query.all()
-    print(books)
+    
+    	print(books)
 
     return render_template('index.html', books=books)
 

@@ -1,4 +1,4 @@
-#!/home/charles/workspace/webimg/venv/bin/python
+#!/home/ali/workspace/webimg/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

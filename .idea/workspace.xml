@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c851ea3-7f78-4cd7-b0f4-9fb8a0d3bfa4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookdatabase.db" beforeDir="false" afterPath="$PROJECT_DIR$/bookdatabase.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google_main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_main_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_main_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv2/bin/python" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv2/bin/python3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv2/lib64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv2/pyvenv.cfg" beforeDir="false" />
-    </list>
+    <list default="true" id="9c851ea3-7f78-4cd7-b0f4-9fb8a0d3bfa4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +239,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="959" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1019" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26036483" />
@@ -258,7 +248,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.40771028" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39840183" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
